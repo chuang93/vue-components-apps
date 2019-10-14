@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>DATA GRID COMPONENT</div>
-        <div> The Row Count is {{rowCount}}</div>
+        <div v-bind:key="row" v-for="row in rowCount"> Row Number: {{row}}</div>
         <div> Inverted Color is {{inverted}}</div>
         <div> the width of the data grid is {{width}}</div>
     </div>

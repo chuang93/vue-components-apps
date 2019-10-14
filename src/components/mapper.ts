@@ -1,4 +1,6 @@
+// @ts-ignore TS Lint does not support ability to recognize named imports in vue files.
 import NavigationBar, { NavigationBarOptions } from './NavigationBar.vue';
+// @ts-ignore TS Lint does not support ability to recognize named imports in vue files.
 import DataGrid, { DataGridOptions } from './DataGrid.vue';
 import Vue, { VueConstructor } from 'vue';
 

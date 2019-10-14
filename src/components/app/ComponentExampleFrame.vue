@@ -22,7 +22,7 @@
                 'div',
                 {},
                 [
-                    createElement(this.component, this.componentProps),
+                    createElement(this.component, { props: this.componentProps }),
                 ],
             );
         },

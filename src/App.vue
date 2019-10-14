@@ -47,7 +47,7 @@
         },
         data() {
             return {
-                selectedComponent: 'NavigationBar',
+                selectedComponent: 'DataGrid',
             };
         },
         computed: {

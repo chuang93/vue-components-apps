@@ -5,11 +5,7 @@
         </div>
         <div v-bind:key="key" v-for="(value, key, index) in componentProps">
             <div>
-                {{index}}. {{key}}:
-                <div v-bind:key="propKey" v-for="(propValue, propKey) in value">
-                    {{propKey}}: <strong>{{propValue}}</strong>
-                </div>
-                <br/><br/>
+                {{index}}. {{key}}: {{value}}
             </div>
         </div>
     </div>

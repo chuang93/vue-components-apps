@@ -1,7 +1,13 @@
 <template>
     <div>
-        <ComponentExampleFrame v-bind:component="component" v-bind:component-name="componentName" v-bind:component-props="componentProps"/>
+        <br/>
+        <ComponentExampleFrame v-bind:component="component" v-bind:component-name="componentName"
+                               v-bind:component-props="componentProps"/>
+        <br/>
+        <br/>
         <DescriptionFrame v-bind:component-name="componentName" v-bind:description="description"/>
+        <br/>
+        <br/>
         <PropsFrame v-bind:component-name="componentName" v-bind:component-props="componentProps"></PropsFrame>
     </div>
 </template>

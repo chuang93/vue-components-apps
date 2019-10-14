@@ -9,7 +9,7 @@
 
     export const NavigationBarOptions: ComponentOptions<Vue> = {
         name: 'NavigationBar',
-        props: {
+        props:  {
             condensed: {
                 type: Boolean,
                 default: true,

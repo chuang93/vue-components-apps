@@ -1,5 +1,9 @@
 <template>
-    <div>DATA GRID COMPONENT</div>
+    <div>
+        <div>DATA GRID COMPONENT</div>
+        <div> The Row Count is {{rowCount}}</div>
+        <div> Inverted Color is {{inverted}}</div>
+    </div>
 </template>
 
 <script lang="ts">
@@ -11,6 +15,10 @@
             rowCount: {
                 type: Number,
                 required: true,
+            },
+            inverted: {
+                type: Boolean,
+                default: true,
             },
         },
     };

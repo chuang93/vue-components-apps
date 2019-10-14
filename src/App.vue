@@ -16,7 +16,7 @@
             <v-list nav>
                 <v-list-item v-bind:key="componentKey" v-for="componentKey in componentKeys">
                     <v-list-item-content>
-                        <v-list-item-title class="title">
+                        <v-list-item-title class="title" v-on:click="setComponent(componentKey)">
                             {{componentKey}}
                         </v-list-item-title>
                     </v-list-item-content>
@@ -53,6 +53,11 @@
         computed: {
             componentKeys(): string[] {
                 return Object.keys(ComponentMapper);
+            },
+        },
+        methods: {
+            setComponent(component: string): void {
+                this.selectedComponent = component;
             },
         },
     })

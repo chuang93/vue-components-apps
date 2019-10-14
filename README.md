@@ -16,10 +16,16 @@ npm run build
 ```
 
 ### Run your unit tests
+Official Documentation:  [Vue Test Utils](https://vue-test-utils.vuejs.org/)
+
+Run all tests: 
 ```
 npm run test:unit
 ```
-
+Change the 'testPathPattern' argument in the command then run:
+```
+Run single test: npm run test:unit-path
+```
 ### Run your end-to-end tests
 ```
 npm run test:e2e

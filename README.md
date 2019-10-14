@@ -43,3 +43,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 1. Vue CLI v3 does not work with Sass Loader v8, it has been manually
 downgraded to v7 until Vue CLI 4 is released.
+
+### Other Deveelopment Notes
+
+Currently using the absolute path from i.e 'src/[PATH]' doesnt work in import statements. for now use relative path resolution i.e './[PATH]'

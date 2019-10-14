@@ -25,27 +25,35 @@
             </v-list>
         </v-navigation-drawer>
         <v-content>
-            {{componentMapper[selectedComponent]}}
+            <FrameContainer v-bind:component-name="selectedComponent"></FrameContainer>
         </v-content>
+        <v-footer>
+            <v-spacer></v-spacer>
+            <div>Tilden Park Capital Management &copy; {{ new Date().getFullYear() }}</div>
+        </v-footer>
     </v-app>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
-    import Mapper from './components/mapper';
+    import { ComponentMapper } from './components/mapper';
+    import FrameContainer from './components/app/FrameContainer.vue';
 
+    // TODO:: REMOVE THIS STATEMENT FROM PRODUCTION BUILD.
     export default Vue.extend({
         name: 'App',
+        components: {
+            FrameContainer,
+        },
         data() {
             return {
                 selectedComponent: 'NavigationBar',
-                componentMapper: Mapper.ComponentMapper,
             };
         },
         computed: {
-                componentKeys(): string[] {
-                    return Object.keys(this.componentMapper);
-                },
+            componentKeys(): string[] {
+                return Object.keys(ComponentMapper);
+            },
         },
     })
     ;

@@ -32,3 +32,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Package.json notes
+
+1. Vue CLI v3 does not work with Sass Loader v8, it has been manually
+downgraded to v7 until Vue CLI 4 is released.

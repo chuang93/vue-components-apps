@@ -1,9 +1,20 @@
 <template>
     <div>
         <div>DATA GRID COMPONENT</div>
-        <div v-bind:key="row" v-for="row in rowCount"> Row Number: {{row}}</div>
         <div> Inverted Color is {{inverted}}</div>
         <div> the width of the data grid is {{width}}</div>
+        <table id ="blackTable">
+            <thead>
+            <tr>
+                <th>Grid</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-bind:key="row" v-for="row in rowCount">
+                <td>Row Number: {{row}}</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </template>
 
@@ -32,5 +43,7 @@
 </script>
 
 <style scoped>
-
+    #blackTable {
+        border: 1px solid black;
+    }
 </style>
